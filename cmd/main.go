@@ -292,11 +292,6 @@ func writeSpotifySongsToDB() {
 	os.Exit(0)
 }
 
-const (
-	apiId   = 25681228
-	apiHash = "854f4a044d9593bb5187085cf347ae5d"
-	chatId  = -1001322114329
-)
 
 func extractSpotifyLinks(text string) []string {
 	return spotifyLinkRegex.FindAllString(text, -1)
